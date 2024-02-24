@@ -13,7 +13,8 @@ const getStudent = async(req,res)=>{
             path:'courseId',
             model:'courses',
             select:'Coursename _id'
-        }])
+        }]);
+        //
         if(student){
  res.status(200).send(student);
         }
